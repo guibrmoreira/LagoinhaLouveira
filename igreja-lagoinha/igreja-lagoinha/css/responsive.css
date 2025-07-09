@@ -1,0 +1,167 @@
+/* responsive.css */
+
+/* Reset para imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Esconder as faixas laterais em telas pequenas */
+@media (max-width: 768px) {
+  .side-banner {
+    display: none;
+  }
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 10px 0 !important;
+    font-size: 16px !important;
+  }
+
+  header.header {
+    padding: 10px 15px !important;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  /* Se seu JS controla a exibição do menu, pode esconder o nav inicialmente */
+  /* .nav { display: none; } */
+}
+
+/* Containers e conteúdo principal responsivos */
+@media (max-width: 768px) {
+  .main-content,
+  .eventos-container,
+  .pastores-container,
+  .gcs-container,
+  .mural-section {
+    padding: 15px !important;
+    max-width: 100% !important;
+    margin: 20px auto !important;
+  }
+}
+
+/* Cards empilhados e ajustes para telas pequenas */
+@media (max-width: 768px) {
+  .evento,
+  .pastor-card,
+  .gc-card {
+    flex-direction: column !important;
+    padding: 15px !important;
+  }
+
+  .evento img,
+  .pastor-image img,
+  .gc-image img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
+    border-radius: 8px !important;
+  }
+
+  .detalhes,
+  .pastor-info,
+  .gc-info {
+    flex: none !important;
+  }
+}
+
+/* Ajustes para tablets (entre 481px e 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .side-banner {
+    width: 25px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 15px;
+    font-size: 16px;
+  }
+
+  .evento img,
+  .pastor-image img,
+  .gc-image img {
+    max-width: 200px;
+  }
+}
+
+/* Ajustes para desktop médio (769px a 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) {
+  body {
+    font-size: 17px;
+  }
+
+  .side-banner {
+    width: 35px;
+    font-size: 26px;
+  }
+
+  .main-content,
+  .eventos-container,
+  .pastores-container,
+  .gcs-container {
+    max-width: 1100px;
+  }
+
+  .evento img,
+  .pastor-image img,
+  .gc-image img {
+    max-width: 250px;
+  }
+}
+
+/* Grandes telas (1200px+) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .side-banner {
+    width: 40px;
+    font-size: 30px;
+  }
+
+  .main-content,
+  .eventos-container,
+  .pastores-container,
+  .gcs-container {
+    max-width: 1200px;
+  }
+
+  .evento img,
+  .pastor-image img,
+  .gc-image img {
+    max-width: 280px;
+  }
+}
+
+.live-video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Para manter a proporção 16:9 */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}

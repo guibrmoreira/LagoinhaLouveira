@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Lagoinha",
+			"path": "../Lagoinha"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Lagoinha"
+	}
+}
