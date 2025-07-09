@@ -1,0 +1,107 @@
+/* responsive.css */
+
+/* Celulares até 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav a {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  .side-banner {
+    display: none; /* Esconder faixas laterais em telas pequenas */
+  }
+  .main-content, .eventos-container, .pastores-container, .gcs-container {
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  .evento, .pastor-card, .gc-card {
+    flex-direction: column !important;
+    padding: 10px;
+  }
+  .evento img, .pastor-image img, .gc-image img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  .detalhes, .pastor-info, .gc-info {
+    flex: none !important;
+  }
+  header.header {
+    padding: 10px 5px;
+  }
+}
+
+/* Tablets entre 481px e 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav a {
+    margin: 10px 15px;
+    font-size: 16px;
+  }
+  .side-banner {
+    width: 25px;
+    font-size: 20px;
+  }
+  .main-content, .eventos-container, .pastores-container, .gcs-container {
+    padding: 15px;
+    max-width: 95%;
+  }
+  .evento, .pastor-card, .gc-card {
+    flex-direction: row !important;
+    gap: 15px;
+  }
+  .evento img, .pastor-image img, .gc-image img {
+    max-width: 200px;
+  }
+}
+
+/* Desktops e telas maiores (769px até 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) {
+  body {
+    font-size: 17px;
+  }
+  .nav a {
+    margin: 0 15px;
+  }
+  .side-banner {
+    width: 35px;
+    font-size: 26px;
+  }
+  .main-content, .eventos-container, .pastores-container, .gcs-container {
+    max-width: 1100px;
+  }
+  .evento img, .pastor-image img, .gc-image img {
+    max-width: 250px;
+  }
+}
+
+/* Grandes telas, notebooks grandes e TV (1200px+) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+  .side-banner {
+    width: 40px;
+    font-size: 30px;
+  }
+  .main-content, .eventos-container, .pastores-container, .gcs-container {
+    max-width: 1200px;
+  }
+  .evento img, .pastor-image img, .gc-image img {
+    max-width: 280px;
+  }
+}
