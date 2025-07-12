@@ -276,4 +276,6 @@ body {
 .dropdown-container:hover .dropdown-menu {
     display: block;
 }
-
+.mobile-menu-toggle {
+  display: none; /* só mostra em telas pequenas via media query */
+}

@@ -1,4 +1,46 @@
 /* responsive.css */
+/* ========= NAV (Menu) MOBILE ========= */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 15px;
+    text-align: center;
+    color: white;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+  }
+
+  .dropdown.active + .dropdown-menu {
+    display: flex;
+  }
+}
 
 /* Reset para imagens responsivas */
 img {
